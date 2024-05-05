@@ -1,6 +1,6 @@
 from setuptools import setup
 
-from my_pip_package import __version__
+from greeting import __version__
 
 setup(
     name='greeting',
