@@ -11,4 +11,7 @@ setup(
     author_email='jeremy.canfield@freekb.net',
 
     py_modules=['snspublish'],
+    install_requires=[
+        "boto3 >= 1.28.45",
+    ],    
 )
