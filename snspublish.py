@@ -7,7 +7,7 @@ import socket
 # -------------------------------------
 # CONSTANT VARIABLES
 # -------------------------------------
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 scriptname = os.path.basename(__file__)
 base_directory = "/usr/local/scripts"
 
