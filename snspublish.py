@@ -30,7 +30,11 @@ def return_session(iam_user_account):
 def return_sts_client(session):
   function_name = inspect.currentframe().f_code.co_name
   try:
-    sts_client = session.client('sts')
+    sts_client = session.client(
+            'sts',
+            region_name='us-east-1',
+            endpoint_url='https://sts.us-east-1.amazonaws.com'
+            )
   except Exception as exception:
     message = f"The '{function_name}' function in {base_directory}/{scriptname} on {socket.gethostname()} got the following exception when trying session.client('sts') - {exception}"
     return { "result": "failed", "message": message }
